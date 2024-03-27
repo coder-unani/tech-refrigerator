@@ -11,6 +11,9 @@ git remote add origin git@github.com:coder-unani/tech.refrigerator.git
 
 # git 원격 저장소 확인
 git remote -v
+
+# git 원격 저장소 링크 수정
+git remote set-url origin git@github.com:coder-unani/tech.refrigerator.git
 ```
 
 ## git branch
@@ -23,7 +26,7 @@ git branch unani
 git checkout unani
 
 # 해당 브랜치의 상세정보
-git branch -v 
+git branch -v
 
 # 모든 브랜치 리스트
 git branch
@@ -39,7 +42,7 @@ git branch -d
 git push origin -d unani
 
 # git master branch가 github에 올라가지 않을 경우
-git reset --hard origin/master 
+git reset --hard origin/master
 ```
 
 ## git push/pull
@@ -48,11 +51,11 @@ git reset --hard origin/master
 # git push
 git push origin master
 
-# git pull 
+# git pull
 git pull origin master
 
 # 강제로 push/pull
-git (push or pull) origin master --force 
+git (push or pull) origin master --force
 ```
 
 ## git add
@@ -73,8 +76,8 @@ git commit -m "메세지 입력"
 ## git merge
 
 ```bash
-# master에 체크아웃 
-git checkout master 
+# master에 체크아웃
+git checkout master
 
 # unani 브랜치를 master에 합침
 git merge unani
@@ -96,9 +99,9 @@ git reset --merge
 >>>>>>> 충돌나는 브랜치명 또는 commmit 아이디
 # 예시
 <<<<<<< HEAD
-master content -> 현재 브랜치[master]에서 수정된 내용 
+master content -> 현재 브랜치[master]에서 수정된 내용
 =======
-test content -> 머지할 브랜치[test]에서 수정한 내용 
+test content -> 머지할 브랜치[test]에서 수정한 내용
 >>>>>>> 충돌나는 브랜치명 또는 commmit 아이디
 
 ## 충동 안나도록 merge 하는 요령 ##
@@ -114,7 +117,7 @@ git checkout unani
 # 머지 요청
 git merge master
 
-# 수정 후, add, commit, push 진행 
+# 수정 후, add, commit, push 진행
 ```
 
 ## git rebase
@@ -144,17 +147,15 @@ git rebase --continue
 ## git tag
 
 ```bash
-# git tag 추가 
-git tag -a v1.0 -m "tag messages" 
+# git tag 추가
+git tag -a v1.0 -m "tag messages"
 
-# git tag 원격저장소 추가 
-(모든 tag) 
-git push origin master --tags  
-git push origin --tags  
-(특정 tag) 
+# git tag 원격저장소 추가
+(모든 tag)
+git push origin master --tags
+git push origin --tags
+(특정 tag)
 git push origin v1.0(태그명)
 ```
 
-
-
-# 
+#
