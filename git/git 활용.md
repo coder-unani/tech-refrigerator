@@ -142,6 +142,12 @@ git commit --amend --author "UNANI [coder.unani@gmail.com](<mailto:coder.unani@g
 
 # 선택한 다음 commit 수정
 git rebase --continue
+
+# 최근 커밋을 어제의 현재 시간으로 변경하기
+git commit --amend --date "1 day ago" -m "커밋 메시지"
+
+# 최근 커밋을 특정 날짜, 시간으로 변경하기
+git commit --amend --date "Thu 30 Mar 2023 10:10:00 KST" -m "커밋 메시지"
 ```
 
 ## git tag
